@@ -1,7 +1,7 @@
 PROJECT DIORA
 A Web Application where users can post stories, update stories, delete stories, and view other user's stories. 
 
-Note: You can download the whole file here: https://github.com/RogueWar/DIORA/blob/master/PROJECT%20DIORA.zip
+Note: You can download the whole file here: https://github.com/RogueWar/DIORA/blob/master/PROJECT%20DIORA.zip or view the files using github, link: https://github.com/RogueWar/DIORA/tree/master/PROJECT%20DIORA
 ______________________________________________________________________________________________________________
 
 Created Users(default, and can be used in the log-in page):
