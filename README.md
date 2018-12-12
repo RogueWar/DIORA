@@ -43,6 +43,18 @@ Database filename: diora.db
 
 _______________________________________________________________________________________________________________
 
+How to run:
+
+To run, open cmd, go to file location of diora.py and type:
+
+python diora.py
+
+then, go to chrome browser or any browser and type: 
+
+localhost:5000
+
+_______________________________________________________________________________________________________________
+
 Programmed by: 
 
 Buentipo, Anthony C.
