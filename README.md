@@ -3,11 +3,11 @@ A Web Application where users can post stories, update stories, delete stories, 
 ______________________________________________________________________________________________________________
 
 Created Users(default, and can be used in the log-in page):
-email: tc@gmail.com Password: tc
-email: tony@gmail.com Password: tony
-email: cha@gmail.com Password: cha
-email: juan@gmail.com Password: juan
-email: denise@gmail.com Password: 12345
+1. email: tc@gmail.com Password: tc
+2. email: tony@gmail.com Password: tony
+3. email: cha@gmail.com Password: cha
+4. email: juan@gmail.com Password: juan
+5. email: denise@gmail.com Password: 12345
 
 ______________________________________________________________________________________________________________
 
