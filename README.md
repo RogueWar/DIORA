@@ -38,12 +38,12 @@ Things to Initialize:
 *Install the following using CMD, to initialize the programs' extension requirements:
 
 Flask
-Flask-SQLAlchemy
-Flask_login
-DateTime
-Flask_wtf
-WTForms
-Flask_bcrypt
+	Flask-SQLAlchemy
+	Flask_login
+	DateTime
+	Flask_wtf
+	WTForms
+	Flask_bcrypt
 
 *Database
 
