@@ -22,9 +22,30 @@ Functionalities:
 		5.2.1. username
 		5.2.2. email
 		5.2.3. password(hashed to hide User's real password)
-______________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________
+
+Things to Initialize:
+
+*Install the following using CMD, to initialize the programs' extension requirements:
+
+Flask
+Flask-SQLAlchemy
+Flask_login
+DateTime
+Flask_wtf
+WTForms
+Flask_bcrypt
+
+*Database
+
+The database file was created using DB Browser for SQLite and was used to view inputted values from the website.
+Database filename: diora.db
+
+_______________________________________________________________________________________________________________
 
 Programmed by: 
+
 Buentipo, Anthony C.
+
 Gatmin, Charlene S.
 
