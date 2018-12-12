@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+        <div class="container">
+          <a class="navbar-brand mr-4" href="{{ url_for('front.home') }}"><img class="rounded-circle" src="static/pictures/diora.png" height="10%" width="10%">DIORA</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarToggle">
+            <div class="navbar-nav mr-auto">
+              <a class="nav-item nav-link" href="{{ url_for('front.home') }}">Home</a>
+              <a class="nav-item nav-link" href="{{ url_for('front.about') }}">About</a>
+            </div>
+   
+            <div class="navbar-nav">
+              {% if current_user.is_authenticated %}
+                <a class="nav-item nav-link" href="{{ url_for('front.post') }}">Post</a>
+                <a class="nav-item nav-link" href="{{ url_for('front.user') }}">Account</a>
+                <a class="nav-item nav-link" href="{{ url_for('front.logout') }}">Logout</a>
+
+              {% else %}
+                <a class="nav-item nav-link" href="{{ url_for('front.login') }}">Login</a>
+                <a class="nav-item nav-link" href="{{ url_for('front.register') }}">Register</a>
+              {% endif %}
+
+            </div>
+             <div class="navbar-brand mr-1">
+              <a style="margin-left: 20%;" class="article-title">{{current_user.username}}</a>
+             </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+    <br>
+    <br>
+
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-3" style="position: fixed; left: 5%;">
+          <div class="content-section">
+            <h3>Social</h3>
+            <p class='text-muted'>
+              Follow us on Facebook, Twitter, and Instagram.
+            </p>
+            <p align="middle" >
+                <a style="margin-right: 5%;" href="https://www.facebook.com/anthony.buentipo"><img class="rounded-circle" src="static/pictures/fblogo.jpg" height="15%" width="15%"></a>
+
+                <a style="margin-right: 5%;" href="https://twitter.com/tony_83198"><img class="rounded-circle" src="static/pictures/tlogo.png" height="15%" width="15%"></a>
+
+                <a href="https://www.instagram.com/anthon_cb/?hl=en"><img class="rounded-circle" src="static/pictures/instalogo.png" height="15%" width="15%"></a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-8" style="position: absolute; right: 4%">
+          {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+          {% block content %}
+
+
+          {% endblock %}
+        </div>
+        
+      </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
