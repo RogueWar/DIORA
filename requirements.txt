@@ -1,0 +1,7 @@
+Flask
+Flask-SQLAlchemy
+Flask_login
+DateTime
+Flask_wtf
+WTForms
+Flask_bcrypt
