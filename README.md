@@ -1,6 +1,6 @@
 PROJECT DIORA
 _____________________________________________________________________________________________________________
-A Web Application where users can post stories, update stories, delete stories, and view other user's stories. 
+A Web Application where users can post register, login, post stories, update stories, delete stories, and view other user's stories. 
 
 Note: 
 1. Using Command Prompt: go to the directory of requirements.txt, and then type "pip install -r requirements.txt"
