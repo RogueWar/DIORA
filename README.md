@@ -2,7 +2,10 @@ PROJECT DIORA
 _____________________________________________________________________________________________________________
 A Web Application where users can post stories, update stories, delete stories, and view other user's stories. 
 
-Note: You can download the whole file here: https://github.com/RogueWar/DIORA/blob/master/PROJECT%20DIORA.zip 
+Note: 
+1. Using Command Prompt: go to the directory of requirements.txt, and then type "pip install -r requirements.txt"
+to install the required extensions to run the website.
+2. You can download the whole file here: https://github.com/RogueWar/DIORA/blob/master/PROJECT%20DIORA.zip 
 or view the files using github, link: https://github.com/RogueWar/DIORA/tree/master/PROJECT%20DIORA
 ______________________________________________________________________________________________________________
 
